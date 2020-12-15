@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/reserve_room.css">
+    
+
+
+    <title>Reserve Room</title>
+</head>
+<body>
+<div class="contenair-full">
+    <div class="cont-center" id="cont-center">
+        <div class="btn" id="btn">
+            <div class="val val1" id="val1"><i class="fa-3x fas fa-suitcase-rolling"></i></div>
+            <div class="bt-img" id="bt-img">
+                <div><i class="fa-4x fas fa-bed"></i></div>
+            </div>
+            <div class="val val2" id="val2"><i class="fa-3x fas fa-suitcase"></i></div>
+            <div class="bt-text" id="" onmouseover="document.body.style.backgroundColor ='orange'">
+                <div>
+                    <p class="btn-title">Reserve My Room</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Design by Mauricio Bucardo
+https://dribbble.com/shots/13975745-Reserve-Room 
+code by Freeey -->
+
+
+<script type="text/javascript">
+    var btn = document.getElementById( 'btn' );
+    var div_tochange = document.getElementById( 'cont-center' );
+    var div_tochange2 = document.getElementById( 'bt-img' );
+    btn.onmouseover = function() {
+        div_tochange.style.backgroundColor = '#532be2';
+        div_tochange2.style.backgroundColor = '#706df8';
+    };
+    btn.onmouseout = function() {
+        div_tochange.style.backgroundColor = '#8a2be2';
+        div_tochange2.style.backgroundColor = '#b186da';
+    };
+</script> 
+
+
+
+</body>
+</html>

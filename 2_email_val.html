@@ -1,0 +1,58 @@
+<!-- Design by M Aaron Iker -
+    https://dribbble.com/shots/10197121-Email-validation -
+    Coded By Cedric AUDRIT -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/email_val.css">
+    <title>EMail Validation</title>
+</head>
+
+<body>
+    <div class="cont-body">
+        <div class="cont-center" id="cont-center">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text" id="iconeemail"><span id="bottom" class="bottom"><i
+                                class="far fa-check-circle "></i></span><span id="top" class="top"><i
+                                class="fas fa-at"></i></span></div>
+                </div>
+                <input class="input-group-field" id="input-group-field" type="email" placeholder="email@domain.com"
+                    onkeyup="ValidateEmail();">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+        function ValidateEmail() {
+            var email = document.getElementById("input-group-field").value;
+            document.getElementById("top").classList.remove("transparent")
+            document.getElementById("bottom").classList.remove("visible")
+            var expr = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+            if (expr.test(email)) {
+                document.getElementById("top").classList.add("transparent")
+                document.getElementById("bottom").classList.add("visible")
+            }
+            if (!expr.test(email)) {
+                document.getElementById("top").style.color = "red";
+                document.getElementById("bottom").classList.remove("visible")
+            }
+            if (email == '') {
+                document.getElementById("top").style.color = "#646B8C";
+                document.getElementById("bottom").classList.remove("visible")
+            }
+        }
+    </script>
+
+</body>
+
+</html>
