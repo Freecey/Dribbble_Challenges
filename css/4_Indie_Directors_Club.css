@@ -1,0 +1,176 @@
+.cont-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  color: #525252;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cont-body .cont-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 475px;
+  max-height: 850px;
+  min-width: 475px;
+  min-height: 850px;
+  width: 475px;
+  height: 850px;
+  background-color: #ffffff;
+  margin: 1em;
+}
+
+.cont-body .cont-center .cont-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding: 1em;
+}
+
+.cont-body .cont-center .cont-info .cont-name_ID {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 49%;
+  border: white 1px solid;
+}
+
+.cont-body .cont-center .cont-info .cont-name_ID .cont-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  padding: 0.5em;
+  padding-bottom: 1em;
+}
+
+.cont-body .cont-center .cont-info .cont-name_ID .cont-id {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10%;
+  padding: 0.5em;
+  padding-bottom: 1em;
+}
+
+.cont-body .cont-center .cont-info .cont-act1 {
+  background-color: white;
+  color: #326c94;
+  border: white 1px solid;
+}
+
+.cont-body .cont-center .cont-info .cont-act3 {
+  background-color: white;
+  color: #2d9483;
+  border: white 1px solid;
+}
+
+.cont-body .cont-center .cont-sub {
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.cont-body .cont-center .cont-sub .ti1 {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.cont-body .cont-center .cont-sub .ti2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cont-body .cont-center .cont-sub .ti3 {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.cont-body .cont-center .cont-sub .cont_sub_ti {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 33%;
+}
+
+.cont-body .cont-center .cont-prez {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 75%;
+  width: 100%;
+}
+
+.cont-body .cont-center .cont-prez .cont-prez-name {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  white-space: nowrap;
+  margin-left: 300px;
+}
+
+.cont-body .cont-center .cont-prez .cont-prez-res {
+  width: 66%;
+  margin-left: -300px;
+}
+
+.cont-body .con1 {
+  background-color: #326c94;
+  color: white;
+}
+
+.cont-body .con2 {
+  background-color: #9c6748;
+  color: white;
+}
+
+.cont-body .con3 {
+  background-color: #2d9483;
+  color: white;
+}
+/*# sourceMappingURL=4_Indie_Directors_Club.css.map */
