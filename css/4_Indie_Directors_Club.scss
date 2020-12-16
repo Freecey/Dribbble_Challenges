@@ -1,4 +1,6 @@
 .cont-body {
+    font-family: system-ui;
+    font-size: 0.8em;
     display: flex;
     // height: 100vh;
     background-color: rgb(0, 0, 0);
@@ -28,23 +30,31 @@
         flex-wrap: wrap;
         width: 100%;
         padding: 1em;
+        .page1:hover{ color: #326c94;}
+        .page2:hover{ color: #9c6748;}
+        .page3:hover{ color: #2d9483;}
         .cont-name_ID{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             width: 49%;
             border: white 1px solid;
+            &:hover{
+                background-color: rgb(255, 255, 255);
+                border: white 1px solid;
+            }
             .cont-name{
                 display: flex;
-                width: 75%;
+                width: 78%;
                 padding: 0.5em;
-                padding-bottom: 1em;
+                padding-bottom: 1.5em;
             }
             .cont-id{
                 display: flex;
                 width: 10%;
                 padding: 0.5em;
-                padding-bottom: 1em;
+                padding-bottom: 1.5em;
+                
             }
 
         }
@@ -79,31 +89,72 @@
             width: 33%;
         }
       }
+
       .cont-prez{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        height: 75%;
+        height: 80%;
         width: 100%;
         .cont-prez-name{
-            // text-transform: uppercase;
-            // letter-spacing: 3px;
-            // width: 33%;
-            // transform: rotate(-90deg);
-            // transform-origin: 0 100%;
-            // z-index: 10;
-            // bottom: 0;
-            transform: rotate(-90deg);
-            white-space: nowrap;
-            margin-left: 300px;
-            
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            width: 33%;
+            padding: 1em;
+            .vert_name{
+                width: 50em;
+                transform: rotate(-90deg);
+                transform-origin: 0 100%;
+                z-index: 10;
+                margin-top: 11.5em;
+                margin-left: 1.2em;
+                font-size: 4em;
+                .span{
+                    display: flex;
+                    align-items: center;
+                }
+            }
         }
         .cont-prez-res{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            line-height: 1.3em;
             width: 66%;
-            margin-left: -300px;
+            text-align: justify;
+            text-justify: inter-word;
+            padding: 1.6em;
+            margin-left: -2.5em;
+        }
+
+        .cont-prez-img{
+            align-self: flex-end;
         }
       }
+      .noact{
+        height: 45%;
     }
+      .cont_toptit{
+        font-size: 4em;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-left: 0.4em;
+        margin-right: 0.4em;
+        margin-top: 0.3em;
+        text-align: justify;
+        text-justify: inter-word;
+        .toptit_1{
+            text-align-last: right;
+        }
+        .toptit_2{
+            text-align-last: left;
+        }
+
+      }
+    }
+
+
+
     .con1{
         background-color: #326c94;
         color: rgb(255, 255, 255);
