@@ -5,10 +5,10 @@ $bg-main: #2e353f;
 $bg-botmenu: #272d36;
 $font-col1: #e7e6ea;
 $font-col2: #868396;
-@font-face {
-  font-family: Lobster;
-  src: url(../fonts/Lobster-Regular.ttf);
-}
+// @font-face {
+//   font-family: Lobster;
+//   src: url("https://cdn.rawgit.com/Freecey/Dribbble_Challenges/master/fonts/Lobster-Regular.ttf");
+// }
 // * {
 //     box-sizing: border-box;
 //     scrollbar-color: transparent transparent; /* thumb and track color */
@@ -352,9 +352,15 @@ $font-col2: #868396;
           align-items: center;
           color: $font-col2;
           .c321-1 {
+            width: 33.3%;
             margin-left: 2em;
+            &:hover {
+              zoom: 1.1;
+              color: rgb(202, 178, 151);
+            }
           }
           .c321-2 {
+            width: 33.3%;
             display: flex;
             position: relative;
             color: $font-col1;
@@ -368,7 +374,13 @@ $font-col2: #868396;
             padding: 10px;
           }
           .c321-3 {
+            width: 33.3%;
             margin-right: 2em;
+            text-align: right;
+            &:hover {
+              zoom: 1.1;
+              color: rgb(202, 178, 151);
+            }
           }
         }
         .c32-2 {
