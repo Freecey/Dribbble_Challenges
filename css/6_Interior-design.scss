@@ -42,23 +42,62 @@ $myyellow: #ffd234;
                 height: 15%;
                 justify-content: space-between;
                 font-family: 'Noto Sans', sans-serif;
+                align-items: center;
                 .c111-1{
                     font-weight: bold;
                     font-weight: 900;
                     text-transform: uppercase;
+                    margin-left: 3em;
+                    font-size: 1.3em;
                     .c1111-2{
                         color: $myyellow;
                         
                     }
                 }
-                .c111-2{}
-                .c111-3{}
+                .c111-2{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: -10em;
+                    
+                    .c1112{
+                        margin-left: 2em;
+                        margin-left: 2em;
+                        font-weight: 900;
+                    }
+                }
+                .c111-3{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 3em;
+                    
+                    .c1113x{
+                        display: flex;
+                        height: 1.5em;
+                        width: 1.5em;
+                        padding: 2px;
+                        background-color: gray;
+                        color: black;
+                        // height: 1em;
+                        border-radius: 90%;
+                        margin: 7.5px;
+                        font-size: 1.2em;
+                        align-items: center;
+                        justify-content: center;
+                        
+                    }
+                    .c1113-2{
+                        
+                    }
+                }
             }
             .c11-2{
                 height: 70%;
                 width: 100%;
                 font-size: 6em;
                 font-weight: bold;
+                margin-top: 0.6em;
                 .c112-1{
                     color: $myyellow;
                     margin-left: 1.5em;
@@ -73,11 +112,43 @@ $myyellow: #ffd234;
                 }
             }
             .c11-3{
+                
                 height: 15%;
                 width: 100%;
                 font-weight: bold;
                 font-weight: 900;
                 text-transform: uppercase;
+                .c113-1{
+                    position: relative;
+                    margin-top: -21.5em;
+                width: 350px;
+                height: 350px;
+                
+                border-top: rgb(255, 255, 255) 3px solid;
+                border-right: rgb(255, 255, 255) 3px solid;
+                border-radius: 0 350px 0 0;
+                -moz-border-radius: 0 350px 0 0;
+                -webkit-border-radius: 0 350px 0 0;
+                }
+                .c113-2{
+                    position: relative;
+                    margin-top: -7em;
+                    margin-left: 3em;
+                    height: 60px;
+                    width: 60px;
+                    background-color: $myyellow;
+                    border-radius: 90%;
+                }
+                .c113-3{
+                    position: relative;
+                    margin-top: -3em;
+                    margin-left: 6.5em;
+                }
+                .c113-4{
+                    position: relative;
+                    margin-top: -1.5em;
+                    margin-left: 9em;
+                }
             }
         }
         .c1-2{
@@ -202,3 +273,4 @@ $myyellow: #ffd234;
         }
     }
 }
+

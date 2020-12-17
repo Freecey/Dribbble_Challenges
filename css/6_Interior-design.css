@@ -62,16 +62,73 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-family: 'Noto Sans', sans-serif;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main .cont-1 .c1-1 .c11-1 .c111-1 {
   font-weight: bold;
   font-weight: 900;
   text-transform: uppercase;
+  margin-left: 3em;
+  font-size: 1.3em;
 }
 
 .main .cont-1 .c1-1 .c11-1 .c111-1 .c1111-2 {
   color: #ffd234;
+}
+
+.main .cont-1 .c1-1 .c11-1 .c111-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: -10em;
+}
+
+.main .cont-1 .c1-1 .c11-1 .c111-2 .c1112 {
+  margin-left: 2em;
+  margin-left: 2em;
+  font-weight: 900;
+}
+
+.main .cont-1 .c1-1 .c11-1 .c111-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 3em;
+}
+
+.main .cont-1 .c1-1 .c11-1 .c111-3 .c1113x {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1.5em;
+  width: 1.5em;
+  padding: 2px;
+  background-color: gray;
+  color: black;
+  border-radius: 90%;
+  margin: 7.5px;
+  font-size: 1.2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main .cont-1 .c1-1 .c11-2 {
@@ -79,6 +136,7 @@
   width: 100%;
   font-size: 6em;
   font-weight: bold;
+  margin-top: 0.6em;
 }
 
 .main .cont-1 .c1-1 .c11-2 .c112-1 {
@@ -102,6 +160,40 @@
   font-weight: bold;
   font-weight: 900;
   text-transform: uppercase;
+}
+
+.main .cont-1 .c1-1 .c11-3 .c113-1 {
+  position: relative;
+  margin-top: -21.5em;
+  width: 350px;
+  height: 350px;
+  border-top: white 3px solid;
+  border-right: white 3px solid;
+  border-radius: 0 350px 0 0;
+  -moz-border-radius: 0 350px 0 0;
+  -webkit-border-radius: 0 350px 0 0;
+}
+
+.main .cont-1 .c1-1 .c11-3 .c113-2 {
+  position: relative;
+  margin-top: -7em;
+  margin-left: 3em;
+  height: 60px;
+  width: 60px;
+  background-color: #ffd234;
+  border-radius: 90%;
+}
+
+.main .cont-1 .c1-1 .c11-3 .c113-3 {
+  position: relative;
+  margin-top: -3em;
+  margin-left: 6.5em;
+}
+
+.main .cont-1 .c1-1 .c11-3 .c113-4 {
+  position: relative;
+  margin-top: -1.5em;
+  margin-left: 9em;
 }
 
 .main .cont-1 .c1-2 {
