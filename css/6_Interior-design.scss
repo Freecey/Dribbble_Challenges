@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+// font-family: 'Montserrat', sans-serif;
+
+// font-family: 'Noto Sans', sans-serif;
+// font-family: 'Noto Sans JP', sans-serif;
+
+$myyellow: #ffd234;
+
+.main{
+    display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        width: 100%;
+        height: 100vh;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.9em;
+    .cont-1{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 66%;
+        height: 100vh;
+        .c1-1{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 100%;
+            height: 66.66vh;
+            color: white;
+            background-color: black;
+            .c11-1{
+                display: flex;
+                width: 100%;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                height: 15%;
+                justify-content: space-between;
+                font-family: 'Noto Sans', sans-serif;
+                .c111-1{
+                    font-weight: bold;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    .c1111-2{
+                        color: $myyellow;
+                        
+                    }
+                }
+                .c111-2{}
+                .c111-3{}
+            }
+            .c11-2{
+                height: 70%;
+                width: 100%;
+                font-size: 6em;
+                font-weight: bold;
+                .c112-1{
+                    color: $myyellow;
+                    margin-left: 1.5em;
+                }
+                .c112-2{
+                    text-align: center;
+                }
+                .c112-3{
+                    position: relative;
+                    text-align: right;
+                    margin-right: -0.75em;
+                }
+            }
+            .c11-3{
+                height: 15%;
+                width: 100%;
+                font-weight: bold;
+                font-weight: 900;
+                text-transform: uppercase;
+            }
+        }
+        .c1-2{
+            display: flex;
+            width: 100%;
+            height: 33.33vh;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            .c12-1{
+                width: 50%;
+                height: 33.33vh;
+                background: url(../img/6_dadplay.webp);
+                background-repeat: no-repeat;
+                
+                background-size: cover;
+                background-size:100% 100%;
+            }
+            .c12-2{
+                width: 25%;
+                height: 33.33vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .c122x{
+                    padding-right: 30px;
+                    padding-left: 30px;
+                }
+                .c122-1{
+                    padding-top: 30px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    .fa-square{ 
+                        margin-left: -1.5em;
+                        margin-right: 0.5em;
+                        color: $myyellow;
+                    }
+                }
+                .c122-2{
+                    margin-top: -3em;
+                    line-height: 1.5em;
+                }
+                .c122-3{
+                    padding-bottom: 30px;
+                    font-weight: bold;
+                }
+            }
+            .c12-3{
+                width: 25%;
+                height: 33.33vh;
+                background: url(../img/6_smartphone.webp);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-size:100% 100%;
+
+            }
+        }
+    }
+    .cont-2{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 33%;
+        .c2-1{
+            width: 100%;
+            height: 75vh;
+            background: url(../img/6_chair-cat2.webp);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-size:100% 100%;
+                // background-color: lighten($myyellow, 100%);
+                
+
+                background-blend-mode: screen;
+        }
+        .c2-2{
+            width: 50%;
+            height: 25vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .c22x{
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+            .c22-1{
+                font-size: 350%;
+                padding-top: 30px;
+            }
+            .c22-2{
+                line-height: 1.5em;
+                margin-top: -3em;
+            }
+            .c22-3{
+                padding-bottom: 30px;
+                font-weight: bold;
+            }
+        }
+        .c2-3{
+            width: 50%;
+            height: 25vh;
+            background-color: $myyellow;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .c23x{
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+            .c23-1{
+                font-size: 350%;
+                padding-top: 30px;
+            }
+            .c23-2{
+                line-height: 1.5em;
+                margin-top: -4em;
+            }
+            .c23-3{
+                padding-bottom: 30px;
+                font-weight: bold;
+            }
+        }
+    }
+}

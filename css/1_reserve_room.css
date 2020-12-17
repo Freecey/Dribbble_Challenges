@@ -27,6 +27,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: .8s;
+  transition: .8s;
 }
 
 .contenair-full .cont-center .btn {
@@ -41,8 +43,8 @@
   display: flex;
   width: 470px;
   height: 140px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
   -webkit-box-shadow: 10px 10px 11px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 10px 10px 11px 0px rgba(0, 0, 0, 0.75);
 }
@@ -69,6 +71,8 @@
           justify-content: center;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  -webkit-transition: .8s;
+  transition: .8s;
 }
 
 .contenair-full .cont-center .btn .bt-text {
@@ -167,60 +171,4 @@
             transform: scale(1);
   }
 }
-
-@-webkit-keyframes example {
-  0% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
-  }
-  25% {
-    background-color: yellow;
-    left: 200px;
-    top: 0px;
-  }
-  50% {
-    background-color: blue;
-    left: 200px;
-    top: 200px;
-  }
-  75% {
-    background-color: green;
-    left: 0px;
-    top: 200px;
-  }
-  100% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
-  }
-}
-
-@keyframes example {
-  0% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
-  }
-  25% {
-    background-color: yellow;
-    left: 200px;
-    top: 0px;
-  }
-  50% {
-    background-color: blue;
-    left: 200px;
-    top: 200px;
-  }
-  75% {
-    background-color: green;
-    left: 0px;
-    top: 200px;
-  }
-  100% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
-  }
-}
-/*# sourceMappingURL=reserve_room.css.map */
+/*# sourceMappingURL=1_reserve_room.css.map */

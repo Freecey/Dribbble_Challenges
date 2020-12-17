@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9em;
+}
+
+.main .cont-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 66%;
+  height: 100vh;
+}
+
+.main .cont-1 .c1-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 66.66vh;
+  color: white;
+  background-color: black;
+}
+
+.main .cont-1 .c1-1 .c11-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 15%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.main .cont-1 .c1-1 .c11-1 .c111-1 {
+  font-weight: bold;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.main .cont-1 .c1-1 .c11-1 .c111-1 .c1111-2 {
+  color: #ffd234;
+}
+
+.main .cont-1 .c1-1 .c11-2 {
+  height: 70%;
+  width: 100%;
+  font-size: 6em;
+  font-weight: bold;
+}
+
+.main .cont-1 .c1-1 .c11-2 .c112-1 {
+  color: #ffd234;
+  margin-left: 1.5em;
+}
+
+.main .cont-1 .c1-1 .c11-2 .c112-2 {
+  text-align: center;
+}
+
+.main .cont-1 .c1-1 .c11-2 .c112-3 {
+  position: relative;
+  text-align: right;
+  margin-right: -0.75em;
+}
+
+.main .cont-1 .c1-1 .c11-3 {
+  height: 15%;
+  width: 100%;
+  font-weight: bold;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.main .cont-1 .c1-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 33.33vh;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main .cont-1 .c1-2 .c12-1 {
+  width: 50%;
+  height: 33.33vh;
+  background: url(../img/6_dadplay.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+.main .cont-1 .c1-2 .c12-2 {
+  width: 25%;
+  height: 33.33vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .cont-1 .c1-2 .c12-2 .c122x {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.main .cont-1 .c1-2 .c12-2 .c122-1 {
+  padding-top: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main .cont-1 .c1-2 .c12-2 .c122-1 .fa-square {
+  margin-left: -1.5em;
+  margin-right: 0.5em;
+  color: #ffd234;
+}
+
+.main .cont-1 .c1-2 .c12-2 .c122-2 {
+  margin-top: -3em;
+  line-height: 1.5em;
+}
+
+.main .cont-1 .c1-2 .c12-2 .c122-3 {
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+
+.main .cont-1 .c1-2 .c12-3 {
+  width: 25%;
+  height: 33.33vh;
+  background: url(../img/6_smartphone.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+.main .cont-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 33%;
+}
+
+.main .cont-2 .c2-1 {
+  width: 100%;
+  height: 75vh;
+  background: url(../img/6_chair-cat2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+  background-blend-mode: screen;
+}
+
+.main .cont-2 .c2-2 {
+  width: 50%;
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .cont-2 .c2-2 .c22x {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.main .cont-2 .c2-2 .c22-1 {
+  font-size: 350%;
+  padding-top: 30px;
+}
+
+.main .cont-2 .c2-2 .c22-2 {
+  line-height: 1.5em;
+  margin-top: -3em;
+}
+
+.main .cont-2 .c2-2 .c22-3 {
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+
+.main .cont-2 .c2-3 {
+  width: 50%;
+  height: 25vh;
+  background-color: #ffd234;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .cont-2 .c2-3 .c23x {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.main .cont-2 .c2-3 .c23-1 {
+  font-size: 350%;
+  padding-top: 30px;
+}
+
+.main .cont-2 .c2-3 .c23-2 {
+  line-height: 1.5em;
+  margin-top: -4em;
+}
+
+.main .cont-2 .c2-3 .c23-3 {
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=6_Interior-design.css.map */
