@@ -64,6 +64,16 @@ $myyellow: #ffd234;
                         margin-left: 2em;
                         margin-left: 2em;
                         font-weight: 900;
+                        transition: ease-in 1s;
+                        padding-top: 3px;
+                        padding-bottom: 3px;
+                        &:hover{
+                            
+                            // text-decoration: overline underline;
+                            color: $myyellow;
+                            border-top: $myyellow 1px solid;
+                            border-bottom: $myyellow 1px solid;
+                        }
                     }
                 }
                 .c111-3{
@@ -85,6 +95,16 @@ $myyellow: #ffd234;
                         font-size: 1.2em;
                         align-items: center;
                         justify-content: center;
+                        
+                        transition: ease-in 1s;
+                        font-size: 1.2em;
+    
+                        &:hover{
+                            // text-decoration: overline underline;
+                            background-color: midnightblue;
+                            color: $myyellow;
+                            
+                        }
                         
                     }
                     .c1113-2{
@@ -141,13 +161,24 @@ $myyellow: #ffd234;
                 }
                 .c113-3{
                     position: relative;
-                    margin-top: -3em;
-                    margin-left: 6.5em;
+                    margin-top: -3.5em;
+                    margin-left: 6em;
+                    transition: ease-in 1s;
+                    
                 }
                 .c113-4{
                     position: relative;
-                    margin-top: -1.5em;
-                    margin-left: 9em;
+                    margin-top: -1.8em;
+                    margin-left: 8em;
+                    transition: ease-in 1s;
+                    font-size: 1.2em;
+
+                    &:hover{
+                        // text-decoration: overline underline;
+                        color: $myyellow;
+                        margin-left: 11em;
+                    }
+                    
                 }
             }
         }
@@ -160,7 +191,7 @@ $myyellow: #ffd234;
             .c12-1{
                 width: 50%;
                 height: 33.33vh;
-                background: url(../img/6_dadplay.webp);
+                background: url(https://github.com/Freecey/Dribbble_Challenges/blob/master/img/6_dadplay.webp?raw=true);
                 background-repeat: no-repeat;
                 
                 background-size: cover;
@@ -194,12 +225,19 @@ $myyellow: #ffd234;
                 .c122-3{
                     padding-bottom: 30px;
                     font-weight: bold;
+                    transition: ease-in 1s;
+
+                    &:hover{
+                        // text-decoration: overline underline;
+                        color: orangered;
+                        margin-left: 3em;
+                    }
                 }
             }
             .c12-3{
                 width: 25%;
                 height: 33.33vh;
-                background: url(../img/6_smartphone.webp);
+                background: url(https://github.com/Freecey/Dribbble_Challenges/blob/master/img/6_smartphone.webp?raw=true);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-size:100% 100%;
@@ -215,7 +253,7 @@ $myyellow: #ffd234;
         .c2-1{
             width: 100%;
             height: 75vh;
-            background: url(../img/6_chair-cat2.webp);
+            background: url(https://github.com/Freecey/Dribbble_Challenges/blob/master/img/6_chair-cat2.webp?raw=true);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-size:100% 100%;
@@ -245,6 +283,13 @@ $myyellow: #ffd234;
             .c22-3{
                 padding-bottom: 30px;
                 font-weight: bold;
+                transition: ease-in 1s;
+
+                    &:hover{
+                        // text-decoration: overline underline;
+                        color: orangered;
+                        margin-left: 3em;
+                    }
             }
         }
         .c2-3{
@@ -269,8 +314,17 @@ $myyellow: #ffd234;
             .c23-3{
                 padding-bottom: 30px;
                 font-weight: bold;
+                transition: ease-in 1s;
+
+                    &:hover{
+                        // text-decoration: overline underline;
+                        color: orangered;
+                        margin-left: 3em;
+                    }
             }
         }
     }
 }
+
+
 

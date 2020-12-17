@@ -96,6 +96,16 @@
   margin-left: 2em;
   margin-left: 2em;
   font-weight: 900;
+  -webkit-transition: ease-in 1s;
+  transition: ease-in 1s;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.main .cont-1 .c1-1 .c11-1 .c111-2 .c1112:hover {
+  color: #ffd234;
+  border-top: #ffd234 1px solid;
+  border-bottom: #ffd234 1px solid;
 }
 
 .main .cont-1 .c1-1 .c11-1 .c111-3 {
@@ -129,6 +139,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: ease-in 1s;
+  transition: ease-in 1s;
+  font-size: 1.2em;
+}
+
+.main .cont-1 .c1-1 .c11-1 .c111-3 .c1113x:hover {
+  background-color: midnightblue;
+  color: #ffd234;
 }
 
 .main .cont-1 .c1-1 .c11-2 {
@@ -186,14 +204,24 @@
 
 .main .cont-1 .c1-1 .c11-3 .c113-3 {
   position: relative;
-  margin-top: -3em;
-  margin-left: 6.5em;
+  margin-top: -3.5em;
+  margin-left: 6em;
+  -webkit-transition: ease-in 1s;
+  transition: ease-in 1s;
 }
 
 .main .cont-1 .c1-1 .c11-3 .c113-4 {
   position: relative;
-  margin-top: -1.5em;
-  margin-left: 9em;
+  margin-top: -1.8em;
+  margin-left: 8em;
+  -webkit-transition: ease-in 1s;
+  transition: ease-in 1s;
+  font-size: 1.2em;
+}
+
+.main .cont-1 .c1-1 .c11-3 .c113-4:hover {
+  color: #ffd234;
+  margin-left: 11em;
 }
 
 .main .cont-1 .c1-2 {
@@ -213,7 +241,7 @@
 .main .cont-1 .c1-2 .c12-1 {
   width: 50%;
   height: 33.33vh;
-  background: url(../img/6_dadplay.webp);
+  background: url(https://github.com/Freecey/Dribbble_Challenges/blob/master/img/6_dadplay.webp?raw=true);
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100% 100%;
@@ -259,12 +287,19 @@
 .main .cont-1 .c1-2 .c12-2 .c122-3 {
   padding-bottom: 30px;
   font-weight: bold;
+  -webkit-transition: ease-in 1s;
+  transition: ease-in 1s;
+}
+
+.main .cont-1 .c1-2 .c12-2 .c122-3:hover {
+  color: orangered;
+  margin-left: 3em;
 }
 
 .main .cont-1 .c1-2 .c12-3 {
   width: 25%;
   height: 33.33vh;
-  background: url(../img/6_smartphone.webp);
+  background: url(https://github.com/Freecey/Dribbble_Challenges/blob/master/img/6_smartphone.webp?raw=true);
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100% 100%;
@@ -286,7 +321,7 @@
 .main .cont-2 .c2-1 {
   width: 100%;
   height: 75vh;
-  background: url(../img/6_chair-cat2.webp);
+  background: url(https://github.com/Freecey/Dribbble_Challenges/blob/master/img/6_chair-cat2.webp?raw=true);
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100% 100%;
@@ -326,6 +361,13 @@
 .main .cont-2 .c2-2 .c22-3 {
   padding-bottom: 30px;
   font-weight: bold;
+  -webkit-transition: ease-in 1s;
+  transition: ease-in 1s;
+}
+
+.main .cont-2 .c2-2 .c22-3:hover {
+  color: orangered;
+  margin-left: 3em;
 }
 
 .main .cont-2 .c2-3 {
@@ -362,5 +404,12 @@
 .main .cont-2 .c2-3 .c23-3 {
   padding-bottom: 30px;
   font-weight: bold;
+  -webkit-transition: ease-in 1s;
+  transition: ease-in 1s;
+}
+
+.main .cont-2 .c2-3 .c23-3:hover {
+  color: orangered;
+  margin-left: 3em;
 }
 /*# sourceMappingURL=6_Interior-design.css.map */
