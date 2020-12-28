@@ -1,0 +1,15 @@
+.mainprod {
+  background-color: #34349b;
+  border-radius: 90%;
+  height: 500px;
+  width: 500px;
+}
+
+.star {
+  color: orangered;
+}
+
+.active {
+  border-bottom: orangered 1px solid;
+}
+/*# sourceMappingURL=18_coffee.css.map */
