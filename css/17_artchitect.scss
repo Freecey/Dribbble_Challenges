@@ -1,0 +1,57 @@
+$bg1: #3b3b3b;
+$bg2: #313131;
+$btn_col: #ff5459;
+$text_col2: #8a888b;
+
+.txt_color1 {
+  color: white;
+}
+
+.txt_color2 {
+  color: $text_col2;
+}
+
+.top {
+  background-color: $bg1;
+  height: 90vh;
+  color: honeydew;
+  .nav {
+    color: $text_col2;
+    .brand {
+    }
+    .burgerline {
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      background: $text_col2;
+      border-radius: 3px;
+    }
+  }
+
+  .top1 {
+    z-index: -1;
+  }
+}
+.top1_img1 {
+  background-image: url(../img/17_1.jpeg);
+  height: 350px;
+  width: 550px;
+   position: absolute;
+   left: 55vh;
+   top: 15em;
+    z-index: -1;
+}
+.top1_img2{
+    background: url(../img/17_2.webp);
+    height: 350px;
+    width: 550px;
+    top: 15em;
+    left: 110vh;
+    // top: 50vh;
+     //z-index: -1;
+}
+
+.second {
+  background-color: $bg2;
+  height: 80vh;
+}

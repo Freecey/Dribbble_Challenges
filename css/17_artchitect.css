@@ -1,0 +1,53 @@
+.txt_color1 {
+  color: white;
+}
+
+.txt_color2 {
+  color: #8a888b;
+}
+
+.top {
+  background-color: #3b3b3b;
+  height: 90vh;
+  color: honeydew;
+}
+
+.top .nav {
+  color: #8a888b;
+}
+
+.top .nav .burgerline {
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  background: #8a888b;
+  border-radius: 3px;
+}
+
+.top .top1 {
+  z-index: -1;
+}
+
+.top1_img1 {
+  background-image: url(../img/17_1.jpeg);
+  height: 350px;
+  width: 550px;
+  position: absolute;
+  left: 55vh;
+  top: 15em;
+  z-index: -1;
+}
+
+.top1_img2 {
+  background: url(../img/17_2.webp);
+  height: 350px;
+  width: 550px;
+  top: 15em;
+  left: 110vh;
+}
+
+.second {
+  background-color: #313131;
+  height: 80vh;
+}
+/*# sourceMappingURL=17_artchitect.css.map */
