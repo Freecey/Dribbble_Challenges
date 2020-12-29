@@ -8,11 +8,21 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="INTRO" id="INTRO">
+        <div class="IN_CONT">
+            <div class="IN_LOGO"></div>
+            <div class="IN_NAME">
+                <div>ERP</div>
+                <div>BETSY</div>
+            </div>
+        </div>
+        
+    </div>
 
-    <video src="vid/Forest-9796.mp4" autoplay loop playsinline muted>
+    <video class="HIDDEN" id="main_video" src="vid/Forest-9796.mp4" autoplay loop playsinline muted>
     </video>
 
-    <main class="viewport-header TOPWIN">
+    <main class="viewport-header TOPWIN HIDDEN" id="main_content">
         <div class="TOPSCREEN">
             <div class="TOPMENU">
                 <div class="BRAND">
@@ -20,7 +30,6 @@
                     <div class="BR_NAME">
                         <div>ERP</div>
                         <div>BETSY</div>
-
                     </div>
                     
                 </div>
@@ -60,7 +69,28 @@
     
         </div>
     </main>
+<script>
+    window.onload=function()  //executes when the page finishes loading
+{
+    setTimeout(func2, 3000);  //SET TO 12000 --   sets a timer which calls function func1 after 2,000 milliseconds = 2 secs.
+	setTimeout(func1, 7500);  //SET TO 12000 --   sets a timer which calls function func1 after 2,000 milliseconds = 2 secs.
+	
+};
+function func1()
+{
+    //document.getElementById("main_content").className="show";
+    document.getElementById("main_content").classList.remove("HIDDEN");
+    document.getElementById("main_video").classList.remove("HIDDEN");
+    document.getElementById("INTRO").classList.remove("INTRO");
+    document.getElementById("INTRO").classList.add("HIDDEN");
+}
+function func2()
+{
+    //document.getElementById("main_content").className="show";
+    document.getElementById("main_video").classList.remove("HIDDEN");
+    }
 
+</script>
     
 </body>
 </html>

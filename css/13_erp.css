@@ -6,6 +6,7 @@ video {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: -1;
 }
 
 .viewport-header {
@@ -21,6 +22,8 @@ video {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-transition: ease-in 0.5s all;
+  transition: ease-in 0.5s all;
 }
 
 .TOPWIN .TOPSCREEN {
@@ -201,5 +204,181 @@ video {
 .BOTSCREEN .SCDONW .SCDONW_TXT {
   margin-left: 2rem;
   font-size: 1.15rem;
+}
+
+.HIDDEN {
+  display: none;
+  height: 0rem;
+}
+
+.INTRO {
+  height: 100vh;
+  width: 100%;
+  background-color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: bg_resize 2.5s;
+          animation: bg_resize 2.5s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  z-index: 40;
+}
+
+.INTRO .IN_CONT {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.INTRO .IN_CONT .IN_LOGO {
+  height: 50rem;
+  width: 50rem;
+  background: url("../img/13_cube.svg") no-repeat;
+  background-size: contain;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-animation: intro_logo1 2.5s, intro_logo2 3.5s 5s;
+          animation: intro_logo1 2.5s, intro_logo2 3.5s 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.INTRO .IN_CONT .IN_NAME {
+  color: honeydew;
+  padding-left: 1rem;
+  font-weight: bold;
+  text-align: left;
+  font-size: 2rem;
+  opacity: 0;
+  margin-left: -5em;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation: intro_BRAND 2.75s 2.5s;
+          animation: intro_BRAND 2.75s 2.5s;
+}
+
+@-webkit-keyframes bg_resize {
+  from {
+    height: 100vh;
+  }
+  to {
+    height: 27rem;
+    display: none;
+  }
+}
+
+@keyframes bg_resize {
+  from {
+    height: 100vh;
+  }
+  to {
+    height: 27rem;
+    display: none;
+  }
+}
+
+@-webkit-keyframes intro_logo1 {
+  0% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    height: 50rem;
+    width: 50rem;
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+@keyframes intro_logo1 {
+  0% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    height: 50rem;
+    width: 50rem;
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+@-webkit-keyframes intro_logo2 {
+  0% {
+  }
+  100% {
+    margin-top: -59rem;
+    margin-left: -108.5rem;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+@keyframes intro_logo2 {
+  0% {
+  }
+  100% {
+    margin-top: -59rem;
+    margin-left: -108.5rem;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+@-webkit-keyframes intro_BRAND {
+  0% {
+    margin-left: -5em;
+    opacity: 0;
+  }
+  90% {
+    margin-left: 1em;
+    opacity: 1;
+  }
+  100% {
+    margin-left: 1em;
+    opacity: 0;
+  }
+}
+
+@keyframes intro_BRAND {
+  0% {
+    margin-left: -5em;
+    opacity: 0;
+  }
+  90% {
+    margin-left: 1em;
+    opacity: 1;
+  }
+  100% {
+    margin-left: 1em;
+    opacity: 0;
+  }
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=13_erp.css.map */
