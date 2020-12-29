@@ -1,0 +1,205 @@
+video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.viewport-header {
+  position: relative;
+  height: 100vh;
+}
+
+.TOPWIN {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.TOPWIN .TOPSCREEN {
+  background-color: gray;
+  height: 27rem;
+  width: 100%;
+  font-size: 1.30rem;
+}
+
+.TOPWIN .TOPSCREEN .TOPMENU {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: honeydew;
+  margin: 3rem;
+  font-family: monospace;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.TOPWIN .TOPSCREEN .TOPMENU .BRAND {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.TOPWIN .TOPSCREEN .TOPMENU .BRAND .BR_LOGO {
+  height: 5rem;
+  width: 5rem;
+  background: url("../img/13_cube.svg") no-repeat;
+  background-size: contain;
+}
+
+.TOPWIN .TOPSCREEN .TOPMENU .BRAND .BR_NAME {
+  padding-left: 1rem;
+  font-weight: bold;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.TOPWIN .TOPSCREEN .TOPMENU .MENU {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+.TOPWIN .TOPSCREEN .TOPMENU .MENU .M_ITEMS {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  -webkit-transition: ease-in 0.5s all;
+  transition: ease-in 0.5s all;
+  padding-bottom: 1em;
+}
+
+.TOPWIN .TOPSCREEN .TOPMENU .MENU .M_ITEMS:hover {
+  color: #055c5c;
+  border-bottom: #055c5c solid 1px;
+}
+
+.M_BTN {
+  background-color: darkcyan;
+  padding: 1.25rem;
+  font-size: 1.30rem;
+  -webkit-clip-path: polygon(0% 0%, 0% 0%, 90% 0%, 100% 25%, 100% 100%, 100% 100%, 10% 100%, 0 75%);
+          clip-path: polygon(0% 0%, 0% 0%, 90% 0%, 100% 25%, 100% 100%, 100% 100%, 10% 100%, 0 75%);
+  -webkit-transition: ease-in 0.5s all;
+  transition: ease-in 0.5s all;
+}
+
+.M_BTN:hover {
+  background-color: #106161;
+}
+
+.BOTSCREEN {
+  color: honeydew;
+  font-family: monospace;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.BOTSCREEN .BS_TT {
+  margin-top: -6rem;
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.BOTSCREEN .BS_RES {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-size: 1.50rem;
+  margin-right: 50%;
+  line-height: 2rem;
+}
+
+.BOTSCREEN .BS_ACTION {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.BOTSCREEN .BS_ACTION .BTN2 {
+  background-color: honeydew;
+  color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: ease-in 0.5s all;
+  transition: ease-in 0.5s all;
+}
+
+.BOTSCREEN .BS_ACTION .BTN2:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: honeydew;
+}
+
+.BOTSCREEN .BS_ACTION .BA_RIGHT {
+  background-color: rgba(0, 139, 139, 0.5);
+  height: 4rem;
+  width: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.BOTSCREEN .BS_ACTION .BA_RIGHT .arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 20px solid honeydew;
+}
+
+.BOTSCREEN .SCDONW {
+  margin-top: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.BOTSCREEN .SCDONW .SCDONW_ICO {
+  background: url("../img/13_arrow-down.png") no-repeat;
+  background-size: contain;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  height: 2rem;
+  width: 2rem;
+}
+
+.BOTSCREEN .SCDONW .SCDONW_TXT {
+  margin-left: 2rem;
+  font-size: 1.15rem;
+}
+/*# sourceMappingURL=13_erp.css.map */

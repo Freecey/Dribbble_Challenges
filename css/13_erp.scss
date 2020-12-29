@@ -1,0 +1,168 @@
+
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .viewport-header {
+    position: relative;
+    height: 100vh;
+    //text-align: center;
+    //display: flex;
+    //align-items: center;
+    //justify-content: center;
+  }
+
+.TOPWIN{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .TOPSCREEN{
+
+        background-color: gray;
+        height: 27rem;
+        width: 100%;
+        font-size: 1.30rem;
+        .TOPMENU{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            color: honeydew;
+            margin: 3rem;
+            font-family: monospace;
+            margin-left: 10rem;
+            margin-right: 10rem;
+            .BRAND{
+                display: flex;
+                align-items: center;
+                .BR_LOGO{
+                    height: 5rem;
+                    width: 5rem;
+                    background: url('../img/13_cube.svg') no-repeat;
+                    background-size: contain;
+                }
+                .BR_NAME{
+                    padding-left: 1rem;
+                    font-weight: bold;
+                    text-align: left;
+                    font-size: 2rem;
+                }
+
+            }
+            .MENU{
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                .M_ITEMS{
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                    transition: ease-in 0.5s all;
+                    padding-bottom: 1em;
+                    &:hover{
+                        color: rgb(5, 92, 92);
+                        border-bottom: rgb(5, 92, 92) solid 1px;
+                        
+
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+.M_BTN{
+    background-color: darkcyan;
+    padding: 1.25rem;
+    //border: 1px black solid;
+    font-size: 1.30rem;
+    clip-path: 
+        polygon(
+            0% 0%,      /* top left */
+            0% 0%,      /* top left */
+            90% 0%,     /* top right */
+            100% 25%,   /* top right */
+            100% 100%,  /* bottom right */
+            100% 100%,  /* bottom right */
+            10% 100%,   /* bottom left */
+            0 75%       /* bottom left */
+        );
+        transition: ease-in 0.5s all;
+    &:hover{
+        background-color: rgb(16, 97, 97);
+    }
+}
+.BOTSCREEN{
+    color: honeydew;
+    font-family: monospace;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    .BS_TT{
+        margin-top: -6rem;
+        font-size: 6rem;
+        font-weight: bold;
+    }
+    .BS_RES{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        font-size: 1.50rem;
+        margin-right: 50%;
+        line-height: 2rem;
+    }
+    .BS_ACTION{
+        display: flex;
+        justify-content: space-between;
+        .BTN2{
+            background-color: honeydew;
+            color: rgba(0, 0, 0, 0.6);
+            transition: ease-in 0.5s all;
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.6);
+            color: honeydew;
+            }
+        }
+
+        .BA_RIGHT{
+            background-color: rgba(0, 139, 139, 0.5);
+            height: 4rem;
+            width: 4rem;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            .arrow-right {
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;
+                
+                border-left: 20px solid honeydew;
+            }
+        }
+    }
+    .SCDONW{
+        margin-top: 7rem;
+        display: flex;
+        align-items: center;
+        //justify-content: center;
+        .SCDONW_ICO{
+            background: url('../img/13_arrow-down.png') no-repeat;
+            background-size: contain;
+            filter: invert(100%);
+            height: 2rem;
+            width: 2rem;
+        }
+        .SCDONW_TXT{
+            margin-left: 2rem;
+            font-size: 1.15rem;
+        }
+    }
+
+}
