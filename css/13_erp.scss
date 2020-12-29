@@ -1,267 +1,396 @@
-
+$main_BG: rgb(55, 55, 55);
 
 video {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
-  .viewport-header {
+.viewport-header {
+  position: relative;
+  height: 100vh;
+  //text-align: center;
+  //display: flex;
+  //align-items: center;
+  //justify-content: center;
+}
+
+.M_BTN {
+  padding: 1.25rem;
+  //border: 1px black solid;
+  font-size: 1.3rem;
+  clip-path: polygon(
+    0% 0%,
+    /* top left */ 0% 0%,
+    /* top left */ 90% 0%,
+    /* top right */ 100% 25%,
+    /* top right */ 100% 100%,
+    /* bottom right */ 100% 100%,
+    /* bottom right */ 10% 100%,
+    /* bottom left */ 0 75% /* bottom left */
+  );
+  transition: ease-in 0.5s all;
+
+}
+
+.TOPWIN {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0.9;
+  animation: main_display 0.2s;
+  animation-fill-mode: forwards;
+  //transition: ease-in 0.5s all;
+  .TOPSCREEN {
+    background-color: $main_BG;
+    height: 27rem;
+    width: 100%;
+    font-size: 1.3rem;
+
+    .TOPMENU {
+      margin-top: -10rem;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      color: honeydew;
+      margin: 3rem;
+      font-family: monospace;
+      margin-left: 10rem;
+      margin-right: 10rem;
+      
+
+      .BRAND {
+        display: flex;
+        align-items: center;
+        margin-left: -30rem;
+        animation: main_menu1 1.5s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        .BR_LOGO {
+          height: 5rem;
+          width: 5rem;
+          background: url("../img/13_cube.svg") no-repeat;
+          background-size: contain;
+        }
+        .BR_NAME {
+          padding-left: 1rem;
+          font-weight: bold;
+          text-align: left;
+          font-size: 2rem;
+        }
+      }
+      .MENU {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin-top: -15rem;
+        animation: main_menu2 1s 1.5s;
+        animation-fill-mode: forwards;
+        .M_ITEMS {
+          padding-left: 2rem;
+          padding-right: 2rem;
+          transition: ease-in 0.5s all;
+          padding-bottom: 1em;
+          &:hover {
+            color: rgb(5, 92, 92);
+            border-bottom: rgb(5, 92, 92) solid 1px;
+          }
+        }
+      }
+      .M_BTN1 {
+        background-color: darkcyan;
+        animation: main_menu3 1s 2.5s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        &:hover {
+            //background-color: rgb(12, 56, 56);
+            background-color: honeydew;
+            color: darkcyan;
+          }
+      }
+    }
+  }
+}
+
+.BOTSCREEN {
+  color: honeydew;
+  font-family: monospace;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  .BS_TT {
+    margin-top: -6rem;
+    font-size: 6rem;
+    font-weight: bold;
+    .BSTT1{
+        opacity: 0;
+        margin-top: 6rem;
+        
+        animation: main_display3 1s;
+        animation-fill-mode: forwards;
+    }
+    .BSTT2{
+        opacity: 0;
+        margin-top: -15rem;
+        
+        animation: main_display4 1s;
+        animation-fill-mode: forwards;
+    }
+  }
+  .BS_RES {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: 1.5rem;
+    margin-right: 50%;
+    line-height: 2rem;
+    opacity: 0;
+    animation: main_display2 1s 1.75s;
+    animation-fill-mode: forwards;
+  }
+  .BS_ACTION {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    animation: main_display2 1s 1.5s;
+    animation-fill-mode: forwards;
+    .BTN2 {
+      background-color: honeydew;
+      color: rgba(0, 0, 0, 0.6);
+      transition: ease-in 0.5s all;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: honeydew;
+      }
+    }
+
+    .BA_RIGHT {
+        opacity: 0;
+        animation: main_display2 1s 1.5s;
+        animation-fill-mode: forwards;
+      background-color: rgba(0, 139, 139, 0.5);
+      height: 4rem;
+      width: 4rem;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      .arrow-right {
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+
+        border-left: 20px solid honeydew;
+      }
+    }
+  }
+  .SCDONW {
+    margin-top: 7rem;
+    display: flex;
+    align-items: center;
+    //justify-content: center;
+    .SCDONW_ICO {
+      background: url("../img/13_arrow-down.png") no-repeat;
+      background-size: contain;
+      filter: invert(100%);
+      height: 2rem;
+      width: 2rem;
+    }
+    .SCDONW_TXT {
+      margin-left: 2rem;
+      font-size: 1.15rem;
+    }
+  }
+}
+.HIDDEN {
+  display: none;
+  height: 0rem;
+}
+
+.INTRO {
+  height: 100vh;
+  width: 100%;
+  background-color: $main_BG;
+  display: flex;
+  //transition: ease-in 2.5s all;
+  animation: bg_resize 2.5s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  z-index: 40;
+  .IN_CONT {
     position: relative;
     height: 100vh;
-    //text-align: center;
-    //display: flex;
-    //align-items: center;
-    //justify-content: center;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .IN_LOGO {
+      height: 50rem;
+      width: 50rem;
+      background: url("../img/13_cube.svg") no-repeat;
+      background-size: contain;
+      transform: rotate(90deg);
+      animation: intro_logo1 2.5s, intro_logo2 1s 5.25s;
+      animation-fill-mode: forwards;
+    }
+    .IN_NAME {
+      color: honeydew;
+      padding-left: 1rem;
+      font-weight: bold;
+      text-align: left;
+      font-size: 2rem;
+      //visibility: hidden;
+      opacity: 0;
+      margin-left: -5em;
+      animation-fill-mode: forwards;
+      animation: intro_BRAND 2.75s 2.5s, intro_BRAND2 1s 5.25s;
+    }
   }
-
-.TOPWIN{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    transition: ease-in 0.5s all;
-    .TOPSCREEN{
-
-        background-color: gray;
-        height: 27rem;
-        width: 100%;
-        font-size: 1.30rem;
-        
-        .TOPMENU{
-            display: flex;
-            justify-content: space-between;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            align-items: center;
-            color: honeydew;
-            margin: 3rem;
-            font-family: monospace;
-            margin-left: 10rem;
-            margin-right: 10rem;
-            .BRAND{
-                display: flex;
-                align-items: center;
-                .BR_LOGO{
-                    height: 5rem;
-                    width: 5rem;
-                    background: url('../img/13_cube.svg') no-repeat;
-                    background-size: contain;
-                }
-                .BR_NAME{
-                    padding-left: 1rem;
-                    font-weight: bold;
-                    text-align: left;
-                    font-size: 2rem;
-                }
-
-            }
-            .MENU{
-                display: flex;
-                flex-direction: row;
-                list-style: none;
-                .M_ITEMS{
-                    padding-left: 2rem;
-                    padding-right: 2rem;
-                    transition: ease-in 0.5s all;
-                    padding-bottom: 1em;
-                    &:hover{
-                        color: rgb(5, 92, 92);
-                        border-bottom: rgb(5, 92, 92) solid 1px;
-                        
-
-                    }
-                }
-
-            }
-
-        }
-    }
-}
-.M_BTN{
-    background-color: darkcyan;
-    padding: 1.25rem;
-    //border: 1px black solid;
-    font-size: 1.30rem;
-    clip-path: 
-        polygon(
-            0% 0%,      /* top left */
-            0% 0%,      /* top left */
-            90% 0%,     /* top right */
-            100% 25%,   /* top right */
-            100% 100%,  /* bottom right */
-            100% 100%,  /* bottom right */
-            10% 100%,   /* bottom left */
-            0 75%       /* bottom left */
-        );
-        transition: ease-in 0.5s all;
-    &:hover{
-        background-color: rgb(16, 97, 97);
-    }
-}
-.BOTSCREEN{
-    color: honeydew;
-    font-family: monospace;
-    margin-left: 10rem;
-    margin-right: 10rem;
-    .BS_TT{
-        margin-top: -6rem;
-        font-size: 6rem;
-        font-weight: bold;
-    }
-    .BS_RES{
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        font-size: 1.50rem;
-        margin-right: 50%;
-        line-height: 2rem;
-    }
-    .BS_ACTION{
-        display: flex;
-        justify-content: space-between;
-        .BTN2{
-            background-color: honeydew;
-            color: rgba(0, 0, 0, 0.6);
-            transition: ease-in 0.5s all;
-            &:hover{
-                background-color: rgba(0, 0, 0, 0.6);
-            color: honeydew;
-            }
-        }
-
-        .BA_RIGHT{
-            background-color: rgba(0, 139, 139, 0.5);
-            height: 4rem;
-            width: 4rem;
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            .arrow-right {
-                width: 0; 
-                height: 0; 
-                border-top: 15px solid transparent;
-                border-bottom: 15px solid transparent;
-                
-                border-left: 20px solid honeydew;
-            }
-        }
-    }
-    .SCDONW{
-        margin-top: 7rem;
-        display: flex;
-        align-items: center;
-        //justify-content: center;
-        .SCDONW_ICO{
-            background: url('../img/13_arrow-down.png') no-repeat;
-            background-size: contain;
-            filter: invert(100%);
-            height: 2rem;
-            width: 2rem;
-        }
-        .SCDONW_TXT{
-            margin-left: 2rem;
-            font-size: 1.15rem;
-        }
-    }
-
-}
-.HIDDEN{
-    display: none;
-    height: 0rem;
-}
-
-.INTRO{
-    height: 100vh;
-    width: 100%;
-    background-color: gray;
-    display: flex;
-    //transition: ease-in 2.5s all;
-    animation: bg_resize 2.5s;
-    animation-delay: 5s;
-    animation-fill-mode: forwards;
-    z-index: 40;
-    .IN_CONT{
-        position: relative;
-        height: 100vh;
-        width: 100%;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .IN_LOGO{
-            height: 50rem;
-            width: 50rem;
-            background: url('../img/13_cube.svg') no-repeat;
-            background-size: contain;
-            transform: rotate(90deg);
-            animation: intro_logo1 2.5s, intro_logo2 3.5s 5s;
-            animation-fill-mode: forwards;
-        }
-        .IN_NAME{
-            color: honeydew;
-            padding-left: 1rem;
-            font-weight: bold;
-            text-align: left;
-            font-size: 2rem;
-            //visibility: hidden;
-            opacity: 0;
-            margin-left: -5em;
-            animation-fill-mode: forwards;
-            animation: intro_BRAND 2.75s 2.5s;
-        }
-    }
 }
 
 @keyframes bg_resize {
-    from {height: 100vh;}
-    to {height: 27rem;
-    display: none;}
+  from {
+    height: 100vh;
   }
+  to {
+    height: 27rem;
+    //    display: none;
+  }
+}
 
 @keyframes intro_logo1 {
-0% {transform: rotate(90deg);
+  0% {
+    transform: rotate(90deg);
     height: 50rem;
-    width: 50rem;}
-100% {transform: rotate(0deg);
-    height: 5rem;
-    width: 5rem;}
-}
-@keyframes intro_logo2 {
-    0%{}
-100% {
-    margin-top: -59rem;
-    margin-left: -108.5rem;
+    width: 50rem;
+  }
+  100% {
     transform: rotate(0deg);
     height: 5rem;
-    width: 5rem;}
+    width: 5rem;
+  }
+}
+// @keyframes intro_logo2 {
+//     0%{}
+// 100% {
+//     margin-top: -59rem;
+//     margin-left: -108.5rem;
+//     transform: rotate(0deg);
+//     height: 5rem;
+//     width: 5rem;}
+// }
+
+@keyframes intro_logo2 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes intro_BRAND {
-    0%{//visibility: hidden;
-        margin-left: -5em;
-        opacity: 0;}
-90% {//visibility: visible;
+  0% {
+    //visibility: hidden;
+    margin-left: -5em;
+    opacity: 0;
+  }
+  90% {
+    //visibility: visible;
     margin-left: 1em;
-    opacity: 1;}
-100% {//visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    //visibility: visible;
     margin-left: 1em;
-        opacity: 0;}
+    opacity: 0;
+  }
 }
 
-.show{
-    display:flex;
-    // visibility: visible;
-    // width: 100%;
-    // height: 100%;
-    // font-size: 100%;
-    // background: url(../img/intro/brad-huchteman-stone-mountain.jpg);
-    // background-size: 100% 100%;
-    // background-repeat: no-repeat;
-    // background-position: 50% 50%;
-    // flex-direction: row;
-    // flex-wrap: wrap;
+@keyframes intro_BRAND2 {
+  0% {
+    margin-left: 1em;
+    opacity: 1;
+  }
+  100% {
+    margin-left: 1em;
+    opacity: 0;
+  }
 }
+
+@keyframes main_display {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes main_menu1 {
+  0% {
+    opacity: 0;
+    margin-left: -30rem;
+  }
+  100% {
+    margin-left: 0rem;
+    opacity: 1;
+  }
+}
+
+@keyframes main_menu2 {
+  0% {
+    //margin-left: +30rem;
+    margin-top: -15rem;
+  }
+  100% {
+    margin-top: 3rem;
+  }
+}
+@keyframes main_menu3 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes main_display2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes main_display3 {
+    0% {
+        opacity: 0;
+        margin-top: 6rem;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0rem;
+    }
+  }
+
+  @keyframes main_display4 {
+    0% {
+        opacity: 0;
+        margin-top: -15rem;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0rem;
+    }
+  }

@@ -41,7 +41,7 @@
                     <li class="M_ITEMS">Blog</li>
                 </ul>
                 <div>
-                    <div class="M_BTN">
+                    <div class="M_BTN M_BTN1">
                         Book Online Presentation
                     </div>
                 </div>
@@ -49,16 +49,16 @@
         </div>
         <div class="BOTSCREEN">
             <div class="BS_TT">
-                <div>We're building</div>
-                <div>software for you</div>
+                <div class="BSTT1">We're building</div>
+                <div class="BSTT2">software for you</div>
             </div>
             <div class="BS_RES">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In est quis maiores optio inventore. Quae nesciunt laborum nostrum labore dolorem aliquid rem ex quaerat unde hic veritatis, voluptate, omnis eius.</div>
             <div class="BS_ACTION">
                 <div>
                     <div class="M_BTN BTN2">Get consultation</div>
                 </div>
-                <div class="BA_RIGHT">
-                    <div class="arrow-right"></div>
+                <div class="BA_RIGHT" id="changevid" onClick="loadAnotherVideo2()">
+                    <div class="arrow-right" ></div>
                 </div>
             </div>
             <div class="SCDONW">
@@ -70,26 +70,49 @@
         </div>
     </main>
 <script>
-    window.onload=function()  //executes when the page finishes loading
-{
-    setTimeout(func2, 3000);  //SET TO 12000 --   sets a timer which calls function func1 after 2,000 milliseconds = 2 secs.
-	setTimeout(func1, 7500);  //SET TO 12000 --   sets a timer which calls function func1 after 2,000 milliseconds = 2 secs.
-	
-};
-function func1()
-{
-    //document.getElementById("main_content").className="show";
-    document.getElementById("main_content").classList.remove("HIDDEN");
-    document.getElementById("main_video").classList.remove("HIDDEN");
-    document.getElementById("INTRO").classList.remove("INTRO");
-    document.getElementById("INTRO").classList.add("HIDDEN");
-}
-function func2()
-{
-    //document.getElementById("main_content").className="show";
-    document.getElementById("main_video").classList.remove("HIDDEN");
+    window.onload = function ()  //executes when the page finishes loading
+    {
+        setTimeout(func2, 3000);  //SET TO 12000 --   sets a timer which calls function func1 after 2,000 milliseconds = 2 secs.
+        setTimeout(func1, 7500);  //SET TO 12000 --   sets a timer which calls function func1 after 2,000 milliseconds = 2 secs.
+    };
+    function func1() {
+        document.getElementById("main_content").classList.remove("HIDDEN");
+        document.getElementById("main_video").classList.remove("HIDDEN");
+        document.getElementById("INTRO").classList.remove("INTRO");
+        document.getElementById("INTRO").classList.add("HIDDEN");
+    }
+    function func2() {
+        document.getElementById("main_video").classList.remove("HIDDEN");
+    }
+let vid1 = 1
+    function loadAnotherVideo2() {
+
+        var video = document.getElementById('main_video');
+        var source = document.getElementById('main_video');
+        var btnswitch = document.getElementById('changevid');
+
+
+        source.setAttribute('src', 'vid/Storm-40581.mp4');
+
+        btnswitch.setAttribute('onClick', 'loadAnotherVideo1()');
+
+        video.load();
+        video.play();
     }
 
+    function loadAnotherVideo1() {
+
+    var video = document.getElementById('main_video');
+    var source = document.getElementById('main_video');
+    var btnswitch = document.getElementById('changevid');
+
+    source.setAttribute('src', 'vid/Forest-9796.mp4');
+
+    btnswitch.setAttribute('onClick', 'loadAnotherVideo2()');
+
+    video.load();
+    video.play();
+}
 </script>
     
 </body>

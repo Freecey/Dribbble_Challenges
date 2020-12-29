@@ -14,6 +14,15 @@ video {
   height: 100vh;
 }
 
+.M_BTN {
+  padding: 1.25rem;
+  font-size: 1.3rem;
+  -webkit-clip-path: polygon(0% 0%, 0% 0%, 90% 0%, 100% 25%, 100% 100%, 100% 100%, 10% 100%, 0 75%);
+          clip-path: polygon(0% 0%, 0% 0%, 90% 0%, 100% 25%, 100% 100%, 100% 100%, 10% 100%, 0 75%);
+  -webkit-transition: ease-in 0.5s all;
+  transition: ease-in 0.5s all;
+}
+
 .TOPWIN {
   height: 100%;
   width: 100%;
@@ -22,18 +31,22 @@ video {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-transition: ease-in 0.5s all;
-  transition: ease-in 0.5s all;
+  opacity: 0.9;
+  -webkit-animation: main_display 0.2s;
+          animation: main_display 0.2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .TOPWIN .TOPSCREEN {
-  background-color: gray;
+  background-color: #373737;
   height: 27rem;
   width: 100%;
-  font-size: 1.30rem;
+  font-size: 1.3rem;
 }
 
 .TOPWIN .TOPSCREEN .TOPMENU {
+  margin-top: -10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,6 +76,12 @@ video {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: -30rem;
+  -webkit-animation: main_menu1 1.5s;
+          animation: main_menu1 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 .TOPWIN .TOPSCREEN .TOPMENU .BRAND .BR_LOGO {
@@ -88,6 +107,11 @@ video {
       -ms-flex-direction: row;
           flex-direction: row;
   list-style: none;
+  margin-top: -15rem;
+  -webkit-animation: main_menu2 1s 1.5s;
+          animation: main_menu2 1s 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .TOPWIN .TOPSCREEN .TOPMENU .MENU .M_ITEMS {
@@ -103,18 +127,18 @@ video {
   border-bottom: #055c5c solid 1px;
 }
 
-.M_BTN {
+.TOPWIN .TOPSCREEN .TOPMENU .M_BTN1 {
   background-color: darkcyan;
-  padding: 1.25rem;
-  font-size: 1.30rem;
-  -webkit-clip-path: polygon(0% 0%, 0% 0%, 90% 0%, 100% 25%, 100% 100%, 100% 100%, 10% 100%, 0 75%);
-          clip-path: polygon(0% 0%, 0% 0%, 90% 0%, 100% 25%, 100% 100%, 100% 100%, 10% 100%, 0 75%);
-  -webkit-transition: ease-in 0.5s all;
-  transition: ease-in 0.5s all;
+  -webkit-animation: main_menu3 1s 2.5s;
+          animation: main_menu3 1s 2.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
 }
 
-.M_BTN:hover {
-  background-color: #106161;
+.TOPWIN .TOPSCREEN .TOPMENU .M_BTN1:hover {
+  background-color: honeydew;
+  color: darkcyan;
 }
 
 .BOTSCREEN {
@@ -130,12 +154,35 @@ video {
   font-weight: bold;
 }
 
+.BOTSCREEN .BS_TT .BSTT1 {
+  opacity: 0;
+  margin-top: 6rem;
+  -webkit-animation: main_display3 1s;
+          animation: main_display3 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.BOTSCREEN .BS_TT .BSTT2 {
+  opacity: 0;
+  margin-top: -15rem;
+  -webkit-animation: main_display4 1s;
+          animation: main_display4 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 .BOTSCREEN .BS_RES {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  font-size: 1.50rem;
+  font-size: 1.5rem;
   margin-right: 50%;
   line-height: 2rem;
+  opacity: 0;
+  -webkit-animation: main_display2 1s 1.75s;
+          animation: main_display2 1s 1.75s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .BOTSCREEN .BS_ACTION {
@@ -145,6 +192,11 @@ video {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  opacity: 0;
+  -webkit-animation: main_display2 1s 1.5s;
+          animation: main_display2 1s 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .BOTSCREEN .BS_ACTION .BTN2 {
@@ -160,6 +212,11 @@ video {
 }
 
 .BOTSCREEN .BS_ACTION .BA_RIGHT {
+  opacity: 0;
+  -webkit-animation: main_display2 1s 1.5s;
+          animation: main_display2 1s 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   background-color: rgba(0, 139, 139, 0.5);
   height: 4rem;
   width: 4rem;
@@ -214,7 +271,7 @@ video {
 .INTRO {
   height: 100vh;
   width: 100%;
-  background-color: gray;
+  background-color: #373737;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,8 +307,8 @@ video {
   background-size: contain;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  -webkit-animation: intro_logo1 2.5s, intro_logo2 3.5s 5s;
-          animation: intro_logo1 2.5s, intro_logo2 3.5s 5s;
+  -webkit-animation: intro_logo1 2.5s, intro_logo2 1s 5.25s;
+          animation: intro_logo1 2.5s, intro_logo2 1s 5.25s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -266,8 +323,8 @@ video {
   margin-left: -5em;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation: intro_BRAND 2.75s 2.5s;
-          animation: intro_BRAND 2.75s 2.5s;
+  -webkit-animation: intro_BRAND 2.75s 2.5s, intro_BRAND2 1s 5.25s;
+          animation: intro_BRAND 2.75s 2.5s, intro_BRAND2 1s 5.25s;
 }
 
 @-webkit-keyframes bg_resize {
@@ -276,7 +333,6 @@ video {
   }
   to {
     height: 27rem;
-    display: none;
   }
 }
 
@@ -286,7 +342,6 @@ video {
   }
   to {
     height: 27rem;
-    display: none;
   }
 }
 
@@ -322,27 +377,19 @@ video {
 
 @-webkit-keyframes intro_logo2 {
   0% {
+    opacity: 1;
   }
   100% {
-    margin-top: -59rem;
-    margin-left: -108.5rem;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    height: 5rem;
-    width: 5rem;
+    opacity: 0;
   }
 }
 
 @keyframes intro_logo2 {
   0% {
+    opacity: 1;
   }
   100% {
-    margin-top: -59rem;
-    margin-left: -108.5rem;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    height: 5rem;
-    width: 5rem;
+    opacity: 0;
   }
 }
 
@@ -376,9 +423,163 @@ video {
   }
 }
 
-.show {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@-webkit-keyframes intro_BRAND2 {
+  0% {
+    margin-left: 1em;
+    opacity: 1;
+  }
+  100% {
+    margin-left: 1em;
+    opacity: 0;
+  }
+}
+
+@keyframes intro_BRAND2 {
+  0% {
+    margin-left: 1em;
+    opacity: 1;
+  }
+  100% {
+    margin-left: 1em;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes main_display {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes main_display {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes main_menu1 {
+  0% {
+    opacity: 0;
+    margin-left: -30rem;
+  }
+  100% {
+    margin-left: 0rem;
+    opacity: 1;
+  }
+}
+
+@keyframes main_menu1 {
+  0% {
+    opacity: 0;
+    margin-left: -30rem;
+  }
+  100% {
+    margin-left: 0rem;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes main_menu2 {
+  0% {
+    margin-top: -15rem;
+  }
+  100% {
+    margin-top: 3rem;
+  }
+}
+
+@keyframes main_menu2 {
+  0% {
+    margin-top: -15rem;
+  }
+  100% {
+    margin-top: 3rem;
+  }
+}
+
+@-webkit-keyframes main_menu3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes main_menu3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes main_display2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes main_display2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes main_display3 {
+  0% {
+    opacity: 0;
+    margin-top: 6rem;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0rem;
+  }
+}
+
+@keyframes main_display3 {
+  0% {
+    opacity: 0;
+    margin-top: 6rem;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0rem;
+  }
+}
+
+@-webkit-keyframes main_display4 {
+  0% {
+    opacity: 0;
+    margin-top: -15rem;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0rem;
+  }
+}
+
+@keyframes main_display4 {
+  0% {
+    opacity: 0;
+    margin-top: -15rem;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0rem;
+  }
 }
 /*# sourceMappingURL=13_erp.css.map */
